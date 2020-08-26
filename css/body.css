@@ -23,9 +23,15 @@ body {
   }
 
   .intro {
-    padding: 200px 200px 200px 200px;
+    width:800px; 
+    margin:0 auto;
     min-height: 100vh;
-    margin: auto;
+    padding-top: 200px;
+    /* 
+    padding: 200px 200px 200px 200px;
+    text-align: center;
+    min-height: 100vh;
+    margin: auto; */
   }
   
   .intro h1 {
