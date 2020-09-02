@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "myFont";
+    src: url("./fonts/Web Fonts/introrustg_base2line_macroman/introrustg-base2line-webfont.woff");
+  }
+
+
+html {
+    font-family: "myFont", "Intro Rust G Base 2Line", serif;
+}
+
+ul {
+    list-style-image: url(../images/art.jpg);
+}
+
+a {
+    font-family: myFont;
+    font-size: 1em;
+    padding: 5pt;
+    border-radius: 20%;
+    text-decoration: underline;
+    color: white;
+    background: linear-gradient(to right, #de57a5, royalblue 50%,royalblue 0%);
+}
+
+a:active {
+    color: royalblue;
+    text-decoration: line-through;
+}
+
+a:hover {
+    text-decoration: underline overline;
+    background: linear-gradient(to right, #de57a5, #de57a5 50%, #de57a5 0%);
+}
+
+a:focus {
+    text-decoration: line-through;
+    color: royalblue;
+    background-color: white;
+}
+
+a:visited {
+    background: linear-gradient(to right, #de57a5, #de57a5 50%, #de57a5 0%);
+    text-decoration: none;
+}
