@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "myFont";
+    src: url("./Chewy/Chewy-Regular.ttf");
+}
+
+html {
+    background: linear-gradient(70deg, #fbcabb, #f9b0c3, #e3abce, #ceb6d9, #a2c8ec);
+    width: 100%;
+    height: 100%;
+}
+
+h1::first-letter {
+    font-size: 44px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+header::first-line {
+    color: #FF0000;
+    color: rgb(255, 0, 0)
+}
+
+h2 {
+    transform:
+        rotate(10deg);
+}
+
+#example1 {
+    display: block;
+    font-family: "myFont", "Chewy-Regular", serif;
+    font-size: 30px;
+    background-color:#abc27c;
+    border-radius: 25px;
+    border: 20px solid #0e1fc6;
+    border-style: groove;
+    width: 30vw;
+    padding: 30px;
+    
+}
+
+#example2 {
+    font-family: "myFont", "Chewy-Regular", serif;
+    font-size: 30px;
+    color: white;
+    text-shadow: 5px 3px #8a8c84;
+    background: linear-gradient(#5a4839, #df342f);
+    background-clip: padding-box;
+    border-radius: 25px;
+    border: 25px dashed #0e1fc6;
+    width: 30vw;
+    padding: 30px;
+/*     box-shadow: white;
+    outline: 5px dashed #0e1fc6; */
+    
+}

@@ -1,0 +1,29 @@
+*{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: 5rem;
+    line-height: 1.5;
+    white-space:pre-line;
+    /* white-space:pre-wrap; */
+}
+
+h1 {
+    font-size: 20rem;
+    text-transform: uppercase;
+    text-shadow: 4px 4px palevioletred;
+}
+
+h2 {
+    font-size: 15rem;
+}
+
+h3 {
+    font-size: 10rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
