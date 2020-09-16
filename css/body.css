@@ -58,24 +58,32 @@ body {
     padding-top: 100px;
     min-height: 100vh;
   }
-  .project-container{
+  .project-container {
     padding-top: 100px;
     min-height: 100vh;
-      text-align: center;
-      margin: 25%;
+    text-align: center;
   }
 
-  .row {
-    display: flex;
-    flex-direction: row;
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-gap: 10px;
   }
 
-  .col {
+ .box1, .box2, .box3, .box4, .box5, .box6 {
     border: solid 3px #de57a5;
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
     font-family: 'Source Code Pro';
-  }
+  } 
+
+  /* .content {
+    border: solid 3px #de57a5;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    font-family: 'Source Code Pro';
+  } */
 
   .contact {
     padding-top: 100px;
