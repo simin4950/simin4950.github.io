@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Simin Savani">
+        <meta name="description" content="Praticing JS through a basic box tutorial!">
+        <link rel="stylesheet" href="basicbox.css">
+    </head>
+    
+    <body>
+        <div id="central">
+            <a href="http://www.siminsavani.com">SEE MY WEBSITE!</a>
+            
+        </div> 
+        <button onClick="changeColor()">CHANGE COLOR <3</button>  
+        
+        
+        <script>
+            var link = document.getElementById("link");
+
+            function changeColor() {
+                document.getElementById("central").style.background = 'radial-gradient(circle, #a2c8ec, #f9b0c3)'
+            }
+        </script>
+    </body>
+</html>
