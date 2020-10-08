@@ -1,0 +1,19 @@
+html {
+    font-family: sans-serif;
+    padding: 10px;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  article {
+      flex: 1 200px;
+  }
+
