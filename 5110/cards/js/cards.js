@@ -22,16 +22,16 @@ function shuffle(deckNo) {
             }
             break;
     }
+
+    $(function(){
+        $("img").draggable();
+    })
+
+    $("img").dblclick(function() {
+        $(this).css("display", "none");
+    })
     
 }
-
-$(function(){
-    $("img").draggable();
-})
-
-$("img").dblclick(function() {
-    $(this).css("display", "none");
-})
 
 function add(deckNo) {
     switch(deckNo){
