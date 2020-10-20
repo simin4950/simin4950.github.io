@@ -1,0 +1,32 @@
+img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    padding: 15px;
+    float: right;
+    grid-area: image;
+}
+
+a {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 5% 10% 2% 10%;
+    grid-area: title;
+}
+
+p {
+    font-size: 26px;
+    padding: 1% 10% 2% 10%;
+    grid-area: des;
+}
+
+#contents {
+    display: grid;
+    grid-template-areas: 
+    'title image'
+    'des image';
+    border: solid #fdb1fd 10px;
+    border-style: none none none solid;
+    margin: 10%;
+    background-color: #fce6fc;
+}
