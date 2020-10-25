@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Simin Savani">
+        <meta name="description" content="Random Trivia">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+            html {
+                background-color:#EFE6DD;
+            }
+            #category {
+                background-color: #BB4430;
+                border: 5px solid white;
+                color: white;
+                padding: 25px;
+                font-size: 16px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+            }
+
+            #question {
+                background-color: #7EBDC2;
+                border: 5px solid white;
+                color: white;
+                padding: 100px;
+                font-size: 32px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #damnAnswer0, #damnAnswer1, #damnAnswer2, #damnAnswer3,
+            #damnAnswer4, #damnAnswer5, #damnAnswer6, #damnAnswer7, 
+            #damnAnswer8, #damnAnswer9{
+                background-color: #F3DFA2;
+                border: 5px solid white;
+                color: white;
+                padding: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            button {
+                width: 100%;
+                background-color: #54577C;
+                border: 5px solid white;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <button onclick="qa()">Load a new question</button>
+        <div id="maindiv"></div>
+    </body>
+</html>
+<script>
+    var divLoad = document.querySelector("#maindiv");
+    var theAnswer = [];
+
+    function qa() {
+        divLoad.innerHTML = "";
+        $.getJSON('http://jservice.io/api/random?count=10', function(data) {
+            for(var i = 0; i < 10; i++){
+                divLoad.innerHTML += "<div id='category'>Category: " + data[i].category.title + "</h3>";
+                divLoad.innerHTML += "<div id='question'>" + data[i].question + "</div>";
+                divLoad.innerHTML += "<div id='damnAnswer" + i + "'></div>"
+                divLoad.innerHTML += "<button onclick='showAnswer(" + i + ")'>Show Answer</button><br>";
+                theAnswer.push(data[i].answer);
+            }
+        });
+    }
+
+    function showAnswer(b) {
+        let whatever = document.querySelector("#damnAnswer" + b);
+        whatever.innerHTML = "<b>The answer is " + theAnswer[b] + "</b>";
+    }
+    
+</script>

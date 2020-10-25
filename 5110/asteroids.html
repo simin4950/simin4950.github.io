@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta name="author" content="Simin Savani">
+    <meta name="description" content="Praticing using APIs">
+    <meta charset="utf-8">
+    <style>
+        #box {
+            border: 2px solid blue;
+            width: fit-content;
+            height: fit-content;
+            padding: 5px;
+        }
+        #max {
+            background-color: #000;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        #min {
+            background-color: grey;
+            border-radius: 50%;
+            
+        }
+
+        #red {
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        #red-min {
+            background-color: pink;
+            border-radius: 50%;
+        }
+    </style>
+    <title>Asteroids</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!--     <div id="count"></div>
+    <div id="astlist"></div>
+    <div id="showData"></div> -->
+</body>
+</html>
+
+<script>
+    let asteroidDisplay = document.querySelector('body');
+
+    $( document ).ready(function() {  
+        $.getJSON('https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=CaKNaWWZzIxl5hScERhaN7yV1d2qCeunrNnxdvYx', function(data) {
+            // var howMany = data.near_earth_objects.length;
+            let dataSource = data.near_earth_objects;
+            for(var i = 0; i < dataSource.length; i++){
+                let maxWidth = (dataSource[i].estimated_diameter.kilometers.estimated_diameter_max)*100;
+                let minWidth = (dataSource[i].estimated_diameter.kilometers.estimated_diameter_min)*100;
+                if(dataSource[i].is_potentially_hazardous_asteroid){
+                    asteroidDisplay.innerHTML+= "<div id='box'><div id='red' style='width:"+maxWidth+"px;height:"+maxWidth+"px'></div><div id='red-min' style='width: " +minWidth+"px;height:"+minWidth+"px'></div></div><br>";
+                } else {
+                    asteroidDisplay.innerHTML+= "<div id='box'><div id='max' style='width:"+maxWidth+"px;height:"+maxWidth+"px'></div><div id='min' style='width: " +minWidth+"px;height:"+minWidth+"px'></div></div><br>";
+                }
+            }
+        });
+    });
+</script>
