@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Simin Savani">
+        <meta name="description" content="This file is the homepage for Treble where users select genre.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <title>Treble</title>
+        <link rel="stylesheet" href="treble.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        <h1>treble</h1>
+        <div id="view">
+            <div id="track"></div>
+            <br>
+            <div id="track-details"></div>
+            <br>
+            <div id="tinder">
+                <button id="dislike" onclick="disliked()"><img src="image/dislike.png"></button> 
+                <button id="superlike" onclick="superliked()"><img src="image/superlike.png"></button> 
+                <button id="like" onclick="liked()"><img src="image/like.png"></button> 
+            </div>
+        </div>
+
+        <div id="results-view">
+            <div id="notification"></div>
+            <br>
+            <button id="results" onclick="results()">Results</button>
+        </div>
+        <br>
+
+        <div id="more-results">
+            <div id="superliked"></div>
+            <div id="liked"></div>
+            <div id="disliked"></div>
+        </div>
+        <br>
+        
+        
+    </body>
+</html>
+<script src="treble.js"></script>

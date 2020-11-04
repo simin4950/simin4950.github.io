@@ -8,8 +8,6 @@ $(document).ready(function() {
                 students.innerHTML += "<div id='student'><div id='name'>" + data[i].stu_name + " " + data[i].last_name + "</div>" 
                     + "<br><img src=http://" + data[i].domain + "/images/me.jpg><br>" 
                     + "<div id='fact'>" + data[i].fact + "</div><br></div>";
-                // category.innerHTML = "Category: " + data[0].category.title;
-                // theAnswer = data[0].answer;
             } 
         });
 });
