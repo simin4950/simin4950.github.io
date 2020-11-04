@@ -1,0 +1,45 @@
+html {
+    background-color: #FAF3DD;
+    font-family: monospace;
+}
+img {
+    width: auto;
+    height: 300px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#name {
+    border-radius: 25px;
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #9C89B8;
+}
+
+#students {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#student {
+    border-radius: 25px;
+    flex: 1 400px;
+    margin: 10px;
+    background-color: #AED9E0;
+}
+ 
+#fact {
+    border-radius: 25px;
+    text-align: center;
+    font-size: large;
+    padding: 75px;
+    margin: 20px;
+    background-color: #B8F2E6;
+}
+
+
