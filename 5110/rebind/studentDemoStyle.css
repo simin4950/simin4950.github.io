@@ -1,0 +1,14 @@
+img {
+    width:400px;
+}
+
+.gradStyle {
+    background-color: black;
+    width: 400px;
+    color: white;
+}
+
+.undGradStyle {
+    background-color: red;
+    width: 400px;
+}

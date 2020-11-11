@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studentDemoStyle.css">
+    <title>Vue Three</title>
+</head>
+
+<body>
+    <div id="us">
+        <div v-for="eachStudent in yall" :class="{gradeStyle: eachStudent.section == '7110', undGradStyle: eachStudent.section == '5110'}">
+            <h2 :style="{backgroundColor:bgColor, width:divWidth}">{{ title }}</h2>
+            <p>{{eachStudent.fact}}</p>   
+            <img :src="dompart1+eachStudent.domain+dompart2">
+        </div>
+    </div>   
+</body>
+</html>
+<script src="youguys.js"></script>
