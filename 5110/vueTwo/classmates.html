@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <meta name="author" content="Simin Savani">
+        <meta name="description" content="Learning how to use Vue.">
+        <title>Vue Two</title>
+        <link rel="stylesheet" href="">
+    </head>
+    
+    <body>
+        <div id="us">
+            <!-- <button v-on:click="showpic">Classmates</button>
+            <h2>{{ stuname }}</h2> -->
+            <img :src="image">
+            <br>
+            <select v-model="oswald" v-on:change="displayImage()">
+                <option v-for="eachStudent in yall" :value="dompart1+eachStudent.domain+dompart2">{{ eachStudent.stu_name }} {{ eachStudent.last_name }}</option>
+            </select>
+            <p>{{ oswald }}</p>
+            <!-- <div v-for="eachStudent in yall">
+                <h2>{{ eachStudent.stu_name }} {{ eachStudent.last_name }}</h2>
+                <p>{{ eachStudent.fact }}</p>
+                <img :src="dompart1+eachStudent.domain+dompart2"/>
+            </div> -->
+        </div>
+        <script src="vue.js"></script>          
+    </body>
+</html>
+
+
