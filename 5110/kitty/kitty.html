@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="kitty.css">
+    <title>Cat Stuff</title>
+</head>
+
+<body>
+    <p>Hypoallergenic cats are highlighted in green.</p>
+    <div id="app">
+        <div id="cat" v-for="eachCat in breeds">
+            <div v-if="eachCat.breeds[0].hypoallergenic == 1" v-bind:style="{backgroundColor: hypoall}">
+                <h2>{{ eachCat.breeds[0].name }}</h2>
+                <p> {{ eachCat.breeds[0].description }}</p>
+                <img :src="eachCat.url">
+            </div>
+
+            <div v-else v-bind:style=>
+                <h2>{{ eachCat.breeds[0].name }}</h2>
+                <p> {{ eachCat.breeds[0].description }}</p>
+                <img :src="eachCat.url">
+            </div>
+           
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="kitty.js"></script>
