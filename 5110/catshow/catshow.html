@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cat Show</title>
+    <link rel="stylesheet" href="catshow.css">
+
+</head>
+
+<body>
+    <div id=top>
+        <ul>
+            <li><a href="#abys">Abyssinian</a></li>
+            <li><a href="#abob">American Bobtail</a></li>
+            <li><a href="#aege">Aegean</a></li>
+            <li><a href="#bali">Balinese</a></li>
+            <li><a href="#bamb">Bambino</a></li>
+        </ul>
+    </div>
+    
+    <div id="intro">
+        <p>This website uses Vue components and props which, simply put, makes elements reusable and allows for data within the component to be changed easily. 
+            For example, we have several cats that are listed by ids and are queried from the cats api so our changing data would be the cats' breed ids, this way,
+            we can see different cats along with their images, descriptions, and other unique information. In our Vue file, we have the loadNextImage method that takes in the 
+            breed id and outputs an array with all of their images and data. The images are flipped through by a method called slideshow which goes through the gallery of cats
+            images. All this information is inputed into the template which is a special feature of the Vue component. There, we can create an html div that can be 
+            used in the actual html page. In this case, our component name is 'catshow' and our prop is 'whichcat'. We use this in the html page by doing < catshow whichcat="somecatidhere">< /catshow>
+            which then outputs the specific cat and it's data. For this project, I also added a star rating to visualize information like how child friendly the cat is 
+            and their energy levels using a star rating system. For this, I created a loadStars() method that takes in a value and contains a switch case that returns the correct
+            html snippet and gets added in the template which then shows up on the main html page. When you click the navigation bar items above, you can flip through the different 
+            cats and only the cat breed that is selected appears. 
+        </p>
+    </div>
+    <div id="cats">
+        <div id="abys">
+            <catshow whichcat="abys"></catshow>
+        </div>
+        <div id="abob">
+            <catshow whichcat="abob"></catshow>
+        </div>
+        <div id="aege">
+            <catshow whichcat="aege"></catshow>
+        </div>
+        <div id="bali">
+            <catshow whichcat="bali"></catshow>
+        </div>
+        <div id="bamb">
+            <catshow whichcat="bamb"></catshow>
+        </div>
+    </div>
+</body>
+    <script src="catshow.js"></script>
+</html>
