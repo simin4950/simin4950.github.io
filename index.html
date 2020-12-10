@@ -1,235 +1,304 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <title>Simin Savani | Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
-    <head>
-        <title>Simin Savani | Software Engineer</title>
-        <link rel="icon" href="./resources/icon.png">
-        <!--Google Icons-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Code+Pro&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./resources/icon.png">
+    <!--Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Code+Pro&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!--Stylesheets-->
-        <link rel="stylesheet" href="./css/navbar.css">
-        <link rel="stylesheet" href="./css/body.css">
-    </head>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/body.css">
 
-    <body>
-        <div class="main">
-        <div class="navbar">
-            <a href="#about">About</a> 
-            <a href="#experience">Experience</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>  
-            <button class="button" onclick="window.location.href ='./resources/Simin Savani_Resume_2020.pdf';">Resume</button>                
-        </div>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+  
+<body> 
+    <div class="navbar">
+        <ul>
+            <li style><button class="button" onclick="window.location.href ='./resources/Simin Savani_Resume_2020.pdf';">Resume</button></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li style="float: left;"><img src="resources/icon.png"></li>
+        </ul>         
+    </div>
 
-        <div class="intro" id=intro>
-            <h2 id="typewriter">Hello, World! My name is</h2>
-            <h1>Simin Savani.</h1>
-            <!-- Maybe have Accessibility flip -->
-            <h2>I code for Accessibility.</h2>
-            <!-- Add very short intro here-->
-            <p class="short-intro">
-        
-            </p>
-            <button class="button" onclick="window.location.href ='mailto:simin.savani@gmail.com';">Contact Me!</button>
-        </div>
-        
-        <div class="about" id="about">
-            <h1>About Me</h1>
-            <p class="about-me">I am a Computer Science ungraduate student and New Media Certficate
-                student at the University of Georgia who is interested in Application Development.
-                I grew interested in this topic as I developed iOS and Android applications through
-                coursework and sheer entertainment! Mobile applications are the one-stop for entertainment
-                and productivity and I want to deepen my knowledge by incorporating machine learning,
-                augmented reality, virtual reality to develop an application for those who have disabilities,
-                like myself.
-            </p>
-        
-            <h2>Programming Languages:</h2>
-            <ul>
-                <li>C</li>
-                <li>C++</li>
-                <li>HTML</li>
-                <li>Node.js</li>
-                <li>JavaScript</li>
-                <li>Swift</li>
-                <li>SQL</li>
-            </ul>
-        
-            <h2>Software:</h2>
-            <ul>
-                <li>3DS Max Design</li>
-                <li>Adobe Photoshop CS4</li>
-                <li>Android Studio</li>
-                <li>AutoCAD</li>
-                <li>Autodesk Inventor</li>
-                <li>Maven</li>
-                <li>mySQL</li>
-                <li>XCode</li>
-            </ul>
-        </div>
-        
-        <div class="experience" id="experience">
-            <h1>Experience</h1>
-            <ul>
-                <li>
+    <div id="home" class="heading"> 
+        <h2>Hello, World! I am</h2> 
+        <h1> 
+            <span class="text-slider-items"> 
+                A Disability Advocate, A Inquisitive Learner, An Innovator, Simin Savani
+            </span> 
+            <strong class="text-slider"></strong> 
+  
+        </h1> 
+        <button class="button" onclick="window.location.href ='mailto:simin.savani@gmail.com';">Contact Me!</button>
+    </div> 
+    <!-- Import typed.min.js file from typed.js folder -->
+    <script src= 
+        "./typed.js-master/lib/typed.min.js"> 
+    </script> 
+      
+    <!-- Add jquery cdn -->
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> 
+    </script> 
+  
+    <!-- Add this script for successful  
+        implementation of typed.js  -->
+    <script> 
+        if ($(".text-slider").length == 1) { 
+              
+            var typed_strings =  
+                $(".text-slider-items").text(); 
+  
+            var typed = new Typed(".text-slider", { 
+                strings: typed_strings.split(", "), 
+                typeSpeed: 50, 
+                loop: true, 
+                backDelay: 900, 
+                backSpeed: 30, 
+            }); 
+        } 
+    </script> 
+
+<div id="about">
+    <h2>simin.aboutMe();</h2>
+    <div class="column">
+        <div class="flex">
+            <div><img src="resources/me.jpg"></div>
+            <div>
+                <p class="about-me">Hi! I'm Simin, 4th year undergrad majoring in Computer Science with New Media Certficate
+                at the University of Georgia. I love learning about and creating new technologies such as mobile applications, 
+                web applications, and VR/AR technologies. I am interested in working on technologies that improve and ease lives
+                of disabled communities. I have spent my time at UGA advocating for students with disabilities and working
+                on VR/AR experiences that allow people to get a glimpse of what it is like to have certain disabilities.
+                </p>
+                <p>Here are few languages and programs I have used on my journey:</p>
+                <div class="list">
                     <ul>
-                        <h3>Software Engineering Intern @ Micrsoft</h3>
-                        <h4>May 2019 - August 2019</h4>
-                        <li>Collaborated with the employees in the AzureStack CI (Continuous Integration) to help improve the
-                            service of AzureStack.</li>
-                        <li>Developed a ChatBot for AzureStack CI and created an API layer that would be used in Microsoft
-                            Teams.</li>
-                        <li>Learned how to use Node.js and Azure Bot Service to develop and program a bot.</li>
+                        <li>C, C#, C++</li>
+                        <li>HTML & CSS</li>
+                        <li>Node.js</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Swift</li>
+                        <li>SQL</li>
                     </ul>
-                </li>
-                <li>
-                    <ul>
-                        <h3>3D Animator/Game Designer @ UGA College of Engineering</h3>
-                        <h4>October 2017 - December 2018</h4>
-                        <li>Worked on NIH-funded research project to develop a virtual reality intervention to increase physical
-                            activity in children.</li>
-                        <li>Used 3D Modeling and basic C++ programming skills to create various objects and actions for the
-                            virtual reality world</li>
-                        <li>Learned how to use Unity and how to make game apps for mobile devices and VR headsets</li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <h3>CodeU Participant @ Google</h3>
-                        <h4>May 2018 - July 2018</h4>
-                        <li>Worked in a team of 3 and a Google Engineer to develop web chat application using Java and HTML/CSS
-                            during 12-week program</li>
-                        <li>Learned how to do code reviews and work on a team coding project through GitHub using Windows
-                            OS-Command Line</li>
-                        <li>Participated in mock interviews with Google Engineers to prepare and build skills for actual coding
-                            interviews</li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <h3>Volunteer Services Intern @ Northeast Georgia Medical Center</h3>
-                        <h4>May 2018 - July 2018</h4>
-                        <li>Responsible for the Summer Teen Volunteers program at the NGMC Gainesville hospital and honored as
-                            Andrew J. Dockery Teen Volunteer of the Year (2017)</li>
-                        <li>Organized and assisted with volunteer orientations and awards ceremony</li>
-                        <li>Communicated with volunteers and worked on special projects to assist patients and their families
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <h3>Technology Teacher @ Kids4Coding</h3>
-                        <h4>June 2016 - July 2017</h4>
-                        <li>Taught a group of 12 to 20 young students about programming in languages such as Java and taught
-                            simple mobile application development</li>
-                        <li>Collaborated with co-teacher to improve flow of classes and teaching schedule.</li>
-                        <li>Assisted camp manager with duties and responsibilities.</li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <h3>Human Resources Information Systems Intern @ NCR Corporation</h3>
-                        <h4>May 2015 - July 2015</h4>
-                        <li>Collaborated with co-workers in the department to complete assigned tasks.</li>
-                        <li>Shadowed job interviews and reviewed interviewees with the interviewer.</li>
-                        <li>Used JS/HTML/CS programming languages and web-design skills to create a web pages for the NCR
-                            employees around the globe.</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="project-container" id="portfolio" >
-            <h1>Portfolio</h1>
-            <div class="grid-wrapper">
-                <div class="box1">
-                        <a class="fa fa-folder" style="font-size:24px;" href="https://youtu.be/SWogTS8dEqE" target="_blank"></a>
-                        <h3>Immigration One-Stop</h3>
                 </div>
-                <div class="box2">
-                    <div class="content">
-                        <i class="material-icons">folder_open</i>
-                        <h3>Immigration One-Stop</h3>
-                    </div>
-                </div>
-                <div class="box3">
-                    <div class="content">
-                        <i class="material-icons">folder_open</i>
-                        <h3>Immigration One-Stop</h3>
-                    </div>
-                </div>
-                <div class="box4">
-                    <div class="content">
-                        <i class="material-icons">folder_open</i>
-                        <h3>Immigration One-Stop</h3>
-                    </div>
-                </div>
-                <div class="box5">
-                    <div class="content">
-                        <i class="material-icons">folder_open</i>
-                        <h3>Immigration One-Stop</h3>
-                    </div>
-                </div>
-                <div class="box6">
-                    <div class="content" id>
-                        <i class="material-icons">folder_open</i>
-                        <h3>Immigration One-Stop</h3>
-                    </div>
+                <div class="list">
+                    <ul>
+                        <li>3DS Max Design</li>
+                        <li>Android Studio</li>
+                        <li>mySQL</li>
+                        <li>SparkAR</li>
+                        <li>WordPress</li>
+                        <li>XCode</li>
+                    </ul>
+                </div>  
                 </div>
             </div>
         </div>
+</div>
 
-        <div class="contact" id="contact">
-            <h1>Get In Touch</h1>
-            <p>I am currently looking for full-time opportunities starting in 2020. 
-                My inbox is also open if you want to say hi! 
-            </p>
-            <button class="button" onclick="window.location.href ='mailto:simin.savani@gmail.com';">Say Hi!</button>
-        </div>
+<div id="experience">
+    <h2>simin.myExperience();</h2>
+    <button class="tablinks" onclick="openWork('Microsoft', this, '#de57a5', 'rgba(222, 87, 165, 0.2)')" id="defaultOpen">Microsoft</button>
+    <button class="tablinks" onclick="openWork('UGA', this, '#de57a5', 'rgba(222, 87, 165, 0.2)')">UGA</button>
+    <button class="tablinks" onclick="openWork('Google', this, '#de57a5', 'rgba(222, 87, 165, 0.2)')">Google</button>
+    <button class="tablinks" onclick="openWork('NGMC', this, '#de57a5', 'rgba(222, 87, 165, 0.2)')">NGMC</button>
+    <button class="tablinks" onclick="openWork('Kids4Coding', this, '#de57a5', 'rgba(222, 87, 165, 0.2)')">Kids4Coding</button>
+    <button class="tablinks" onclick="openWork('NCR', this, '#de57a5', 'rgba(222, 87, 165, 0.2)')">NCR</button>
+
+    <div id="Microsoft" class="tabcontent">
+        <h3>Software Engineering Intern <strong>@ Microsoft</strong></h3>
+        <h4>May 2020 - August 2020</h4>
+        <ul>
+            <li>Worked with the colleagues in the Azure Storage MPA XFE (Multi-Protocol Access, Front End) team to improve features in the Azure Storage Blob service by using C++ and C# programming languages.</li>
+            <li>Fixed bugs in Azure Storage Blob services to enhance customer experience and learned about extensive testing and debugging techniques to ensure bugs were safely and correctly resolved.</li>
+            <li>Founded and led a Disability Co-Creation team with five other interns to develop the “Accessibility Series” and the “Disability Mentorship Program” to showcase the importance of accessibility and developing accessible technologies.</li>
+        </ul>
+        <h4>May 2019 - August 2019</h4>
+        <ul>
+            <li>Collaborated with the employees in the AzureStack CI (Continuous Integration) to help improve the service of AzureStack.</li>
+            <li>Developed a ChatBot for AzureStack CI and created an API layer that would be used in Microsoft Teams.</li>
+            <li>Learned how to use Node.js and Azure Bot Service to develop and program a bot.</li>
+        </ul>
     </div>
-    </body>
-    
-</html>
 
-<!-- <div w3-include-html="navbar.html"></div>
+    <div id="UGA" class="tabcontent">
+        <h3>3D Artist/Student Developer <strong>@ University of Georgia</strong></h3>
+        <h4>September 2020 - Present</h4>
+        <ul>
+            <li>Worked with the Department of Psychology to create education AR filters on SparkAR that are available on IG and FB.</li>
+            <li>Created a filter that stimulated hearing loss and allows users to experience the ranges of hearing loss.</li>
+            <li>Met and worked with small team to create a website to showcase the AR/VR projects developed by the Department of Psychology</li>
+        </ul>
+        <h4>October 2017 - October 2018</h4>
+        <ul>
+            <li>Worked on NIH-funded research project to develop a virtual reality intervention to increase physical activity in children.</li>
+            <li>Used 3D Modeling and basic C++ programming skills to create various objects and actions for the virtual reality world.</li>
+            <li>Learned how to use Unity and how to make game apps for mobile devices and VR headsets.</li>
+        </ul>
+    </div>
+
+    <div id="Google" class="tabcontent">
+        <h3>CodeU Participant <strong>@ Google</strong></h3>
+        <h4>May 2018 - July 2018</h4>
+        <ul>
+            <li>Worked in a team of 3 and a Google Engineer to develop web chat application using Java and HTML/CSS during 12-week program.</li>
+            <li>Learned how to do code reviews and work on a team coding project through GitHub using Windows OS-Command Line.</li>
+            <li>Participated in mock interviews with Google Engineers to prepare and build skills for actual coding interviews.</li>
+        </ul>
+    </div>
+
+    <div id="NGMC" class="tabcontent">
+        <h3>Volunteer Services Intern <strong>@ Northeast Georgia Medical Center</strong></h3>
+        <h4>May 2018 - July 2018</h4>
+        <ul>
+            <li>Responsible for the Summer Teen Volunteers program at the NGMC Gainesville hospital and honored as Andrew J. Dockery Teen Volunteer of the Year (2017).</li>
+            <li>Organized and assisted with volunteer orientations and awards ceremony while managing the database consisting of volunteer hours and information.</li>
+            <li>Communicated with volunteers and worked on special projects to assist patients and their families.</li>
+        </ul>
+                        
+    </div>
+
+    <div id="Kids4Coding" class="tabcontent">
+        <h3>Technology Teacher <strong>@ Kids4Coding</strong></h3>
+        <h4>June 2016 - July 2017</h4>
+        <ul>
+            <li>Taught a group of 12 to 20 young students about programming in languages such as Java and taught simple mobile application development.</li>
+            <li>Collaborated with co-teacher to improve flow of classes and teaching schedule.</li>
+            <li>Assisted camp manager with duties and responsibilities.</li>
+        </ul>              
+    </div>
+
+    <div id="NCR" class="tabcontent">
+        <h3>Human Resources Information Systems Intern <strong>@ NCR Corporation</strong></h3>
+        <h4>May 2015 - July 2015</h4>
+        <ul>
+            <li>Collaborated with co-workers in the department to complete assigned tasks.</li>
+            <li>Shadowed job interviews and reviewed interviewees with the interviewer.</li>
+            <li>Used JS/HTML/CS programming languages and web-design skills to create a web pages for the NCR employees around the globe.</li>
+        </ul>
+    </div>
+    
+</div>
 
 <script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
+    function openWork(workName, elmnt, borderColor, color) {
+        // Hide all elements with class="tabcontent" by default
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
         }
-      }
+
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+            tablinks[i].style.color = "";
+            tablinks[i].style.borderColor = "#f1f1f17a";
+        }
+
+        // Show the specific tab content
+        document.getElementById(workName).style.display = "block";
+
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+        elmnt.style.color = borderColor;
+        elmnt.style.borderColor = borderColor;
     }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
     </script>
 
-"Hello World" 
+<div id="portfolio">
+    <h2>simin.myPortfolio();</h2>
+    <div class="container">
+        <div class="item">
+            <i class="fa fa-folder-o" style="font-size: xx-large; color:#de57a5"></i>
+            <a class="fa fa-github" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://github.com/simin4950/Immigration-One-Stop/tree/master" target="_blank"></a>
+            <a class="fa fa-youtube-play" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://youtu.be/SWogTS8dEqE" target="_blank"></a> 
+            <h3>Immigration One-Stop</h3>
+            <p>An iOS mobile application developed in NMIX 4310 that provides free legal aid to residents in Georgia.</p>
+            <h4>Swift <strong>-</strong> Xcode</h4>
+        </div>
 
-<script>
-    includeHTML();
-</script> -->
+        <div class="item">
+            <i class="fa fa-folder-o" style="font-size: xx-large; color:#de57a5"></i>
+            <a class="fa fa-external-link" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://www.mynmi.net/capstone/20f/zoombikeshare/" target="_blank"></a>
+            <a class="fa fa-github" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://github.com/simin4950/ZoomBikes/tree/main" target="_blank"></a>
+            <a class="fa fa-youtube-play" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://www.youtube.com/watch?v=psMApP8cjMU&ab_channel=MeredithTilton" target="_blank"></a> 
+            <h3>Zoom Bikes</h3>
+            <p>We developed an iOS framework for rideshare companies that provides a lightweight app clip for fully-developed rideshare apps in NMIX 5110. </p>
+            <h4>Swift <strong>-</strong> Xcode Beta</h4>
+        </div>
+
+        <div class="item">
+            <i class="fa fa-folder-o" style="font-size: xx-large; color:#de57a5"></i>
+            <a class="fa fa-external-link" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://ishson19.github.io/biits/projectSeed/landingPortal.html" target="_blank"></a>
+            <a class="fa fa-github" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://github.com/ishson19/biits/tree/master/projectSeed" target="_blank"></a>
+            <h3>Project SEED</h3>
+            <p>We developed a web application that teaches basic concepts like colors, shapes, and directions with muted colors and clear diction for children with ASD.</p>
+            <h4>HTML <strong>-</strong> CSS <strong>-</strong> JavaScript <strong>-</strong> Scratch</h4>
+        </div>
+
+        <div class="item">
+            <i class="fa fa-folder-o" style="font-size: xx-large; color:#de57a5"></i>
+            <a class="fa fa-github" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://github.com/simin4950/ShoppingList/tree/master" target="_blank"></a>
+            <a class="fa fa-youtube-play" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://youtu.be/XUhWe7mfuSc" target="_blank"></a> 
+            <h3>Shopping List</h3>
+            <p>We developed an Android mobile application for CSCI 4060 that allows users to create a shopping list and add other users to view and modify the shopping list.</p>
+            <h4>Java <strong>-</strong> Android Studio <strong>-</strong> Firebase</h4>
+        </div>
+
+        <div class="item">
+            <i class="fa fa-folder-o" style="font-size: xx-large; color:#de57a5"></i>
+            <a class="fa fa-instagram" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://www.instagram.com/ar/3616578278363103/?ch=YTg1MjM0NWViYzVjNWNkMTA1Mzg0MjVhMjk2ZGU4Mzc%3D" target="_blank"></a>
+            <h3>Lobes of the Brain Filter</h3>
+            <p>Learn about the different lobes of the brain and see where they are located on your head.</p>
+            <h4>JavaScript <strong>-</strong> SparkAR</h4>
+        </div>
+
+        <div class="item">
+            <i class="fa fa-folder-o" style="font-size: xx-large; color:#de57a5"></i>
+            <a class="fa fa-github" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="https://github.com/simin4950/simin4950.github.io" target="_blank"></a>
+            <a class="fa fa-external-link" style="font-size: xx-large; color:#f1f1f1af; float:right; padding-left: 10px;" href="http://siminsavani.com/" target="_blank"></a>
+            <h3>Personal Portfolio</h3>
+            <p>Developed a web portfolio to showcase my work and my resume. I started this portfolio in 2019 and it is constantly improving.</p>
+            <h4>Java <strong>-</strong> Android Studio <strong>-</strong> Firebase</h4>
+        </div>
+
+    </div>
+</div>
+
+<div id="contact">
+    <h2>simin.contactMe();</h2>
+    <p>I am currently looking for full-time opportunities starting in 2020. My inbox is also open if you want to leave feeback or say hi! </p>
+    <button class="button" onclick="window.location.href ='mailto:simin.savani@gmail.com';">Say Hi!</button>
+    <br>
+    <br>
+    <a id="github" class="fa fa-github" style="font-size: xx-large; color:#f1f1f1af;" href="https://github.com/simin4950"></a>
+    <a id="linkedin" class="fa fa-linkedin-square" style="font-size: xx-large; color:#f1f1f1af; padding-left: 10px;" href="https://github.com/simin4950"></a>
+    
+
+</div>
+
+</body> 
+  
+</html> 
