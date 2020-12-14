@@ -79,26 +79,21 @@ ul {
   min-height: 100vh;
 }
 
-#about img {
-  border: 5px solid #de57a5;
+#border {
+  border: 10px solid #de57a5;
 }
 
-img:hover {
-  opacity: 1.0;
+#about .container ul li::before {
+  content: "\2022";
+  color: #de57a5;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex div:first-child {
-  flex: 1;
-}
-
-.flex div:last-child {
-  margin: 2rem;
-  flex: 2;
-  font-size: 18px;
+#about .item {
+  flex: 400px;
 }
 
 .list {
@@ -165,12 +160,13 @@ img:hover {
   padding-top: 100px;
   min-height: 100vh;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.item {
+#portfolio .item {
   flex: 400px;
   padding: 20px;
   margin: 10px;
@@ -180,13 +176,13 @@ img:hover {
   background-color: rgba(222, 87, 165, 0.2);
 }
 
-.item:hover {
+#portfolio .item:hover {
   top: -10px;
 }
 
 #contact {
-  padding-top: 80px;
-  min-height: 80vh;
+  padding-top: 100px;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -219,8 +215,8 @@ img:hover {
   } */
 
   .contact {
-    padding-top: 100px;
-    min-height: 100vh;
+    padding-top: 80px;
+    min-height: 80vh;
     text-align: center;
   }
 

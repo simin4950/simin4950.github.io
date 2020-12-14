@@ -4,7 +4,7 @@
   padding: 0;
   overflow: hidden;
   background-color: #0A192F;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 95%;
 }
@@ -24,6 +24,10 @@
 
 .navbar a:hover {
   color: #de57a5;
+}
+
+.navbar img {
+  margin-top: 20px;
 }
 
 
