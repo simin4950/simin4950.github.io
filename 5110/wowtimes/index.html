@@ -1,0 +1,169 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <title>WOW!Times</title>
+    <meta name="description" content="This project is a template for an e-commerce website that uses Vue.js, JS, HTML, and CSS. I have based it on my parents' e-commerce business called WowTimes.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="./images/icon.png">
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Code+Pro&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <!-- HTML Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/body.css">
+
+     <!-- Import Vue.js -->
+     <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+</head> 
+  
+<body> 
+    <div id="app">
+        <div class="navbar">
+            <a href="#"><i class="fa fa-shopping-cart"></i>({{ cart }})</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#home">Home</a>
+            <a class="brand-name" href="#">W<img src="./images/icon-small.png">W!Times</li>
+            </ul>         
+        </div>
+    
+        <div id="home" class="heading"> 
+            <h2>Welcome to</h2> 
+            <h1>W<img src="./images/icon-large.png">W!Times</h1> 
+            <h3>When you see the prices, you'll see what we mean by WOW!</h3>
+            <a href="#products"><button class="button">Check Out Our Hottest Tech Gadgets!</button></a>
+        </div> 
+    
+    <div id="products">
+        <h2>Featured Products</h2>
+        <h3 style="text-align: center;">Click on the shopping cart to add to cart!</h3>
+        <div class="container">
+            <div class="item">
+                <img src="./images/battery.jpg">
+                <a class="fa fa-shopping-cart" v-on:click="addToCart"></a>
+                <h3>Arlo Rechargeable Battery</h3>
+                <p>This rechargeable battery comes with a charging cable and adapter that is compatible with <strong>Arlo Pro, Arlo Pro 2, and Arlo Light</strong></p>
+                <h4><strong>$49.99</strong></h4>
+            </div>
+    
+            <div class="item">
+                <img src="./images/cable.jpg">
+                <a class="fa fa-shopping-cart" v-on:click="addToCart"></a>
+                <h3>Arlo Charger Cable</h3>
+                <p>This charging cable is 10 feet long and comes with a USB charger that is compatible with <strong>Arlo Pro, Arlo Pro 2, Arlo Q, and Arlo Light</strong></p>
+                <h4><strong>$29.99</strong></h4>
+            </div>
+    
+            <div class="item">
+                <img src="./images/skin.jpg">
+                <a class="fa fa-shopping-cart"  v-on:click="addToCart"></a>
+                <h3>Arlo Pro Silicone Skin</h3>
+                <p>This silicone skin will protect your <strong>Arlo Pro</strong> from weather hazards. 
+                    The skin is UV and water resistant with a built-in shade for sun glare protection, making it ideal for both outdoor and indoor use. </p>
+                <h4><strong>$24.99</strong></h4>
+            </div>
+    
+            <div class="item">
+                <img src="./images/black-base.jpg">
+                <a class="fa fa-shopping-cart" v-on:click="addToCart"></a>
+                <h3>Arlo Base Station (Black)</h3>
+                <p>This sleek, black Arlo base station comes with a power adapter and ethernet cable. The base station is compatible with <strong>Arlo Camera, Arlo Pro, and Arlo Pro 2</strong>.</p>
+                <h4><strong>$39.99</strong></h4>
+            </div>
+    
+            <div class="item">
+                <img src="./images/white-base.jpg">
+                <a class="fa fa-shopping-cart" v-on:click="addToCart"></a>
+                <h3>Arlo Base Station (White)</h3>
+                <p>This neat, white Arlo base station comes with a power adapter and ethernet cable. The base station is compatible with <strong>Arlo Camera, Arlo Pro, and Arlo Pro 2</strong>.</p>
+                <h4><strong>$39.99</strong></h4>
+            </div>
+    
+            <div class="item">
+                <img src="./images/pro.jpg">
+                <a class="fa fa-shopping-cart" v-on:click="addToCart"></a>
+                <h3>Arlo Pro 3</h3>
+                <p>This is the latest, wire-free Arlo Pro camera that has top-of-the-line features such as HD video quality, 
+                    weather resistant camera, color night vision, and more. This comes with Arlo Pro 3 camera, 
+                    rechargeable battery, power adapter, magnetic charging cable, wall mount and screw kit, base station, and ethernet cable.</p>
+                <h4><strong>$199.00</strong></h4>
+            </div>
+    
+        </div>
+    </div>
+    
+    <div id="about">
+        <h2>About Us</h2>
+        <div class="container">
+            <div class="item">
+                <img src="./images/business-pic.jpg" id="border">
+            </div>
+            <div class="item">
+                <p class="about-me">
+                    Hey y'all, we are WOW!Times. We are a small home business based in Atlanta, Georgia. 
+                    The folks at WOW!Times are <strong><em>obessed with tech and with great prices</em></strong> and we bet you are too! 
+                    Security cameras are our latest must-haves and we have the <strong><em>best prices on the market</em></strong> (but you didn't hear that from us!).
+                    We first started at eBay selling small tech gadgets and kicked off our eBay store @ <strong><a href="https://www.ebay.com/str/wowtimes" target="_blank">WOW!Times</a></strong>. 
+                    Now we are a <strong><em>bigger small business</em></strong> that wants to expand to more customers who love resonably priced tech stuff as much as we do! 
+                </p>
+                <p>
+                    Thank you for checking us out and be sure to sign up for our weekly newsletters for <strong><em>new tech stuff and deals</em></strong> you do not want to miss out on! 
+                </p>
+            </div>
+    </div>
+    
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <div class="chat-area">
+            <h3>We would love to hear from you!</h3>
+            <form class="mail-form">
+                <div class="container">
+                    <div class="item">
+                        <input type="text" id="name" name="name" style="width: 90%; height: 50px; font-family: 'Quicksand'; font-size: 20px; margin: 10px;" placeholder="First Name*" required><br>
+                    </div>
+                    <div class="item">
+                        <input type="text" id="name" name="name" style="width: 90%; height: 50px; font-family: 'Quicksand'; font-size: 20px; margin: 10px;" placeholder="Last Name*" required><br>
+                    </div>
+                    <div class="item">
+                        <input type="text" id="email" name="email" style="width: 95%; height: 50px; font-family: 'Quicksand'; font-size: 20px; margin: 10px;" placeholder="Email Address*" required><br>
+                        <input type="text" id="subject" name="subject" style="width: 95%; height: 50px; font-family: 'Quicksand'; font-size: 20px; margin: 10px;" placeholder="Subject*" required><br>
+                        <textarea placeholder="Message*" style="width: 95%; height: 50%; font-family: 'Quicksand'; font-size: 20px; margin: 10px;"></textarea>
+                        <button type="submit" class="button" onclick="sendMail()">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+<!-- Import App -->
+<script src="./main.js"></script>
+
+<!-- Import Components -->
+<script src="./components/ProductDisplay.js"></script>
+
+<!-- Mount App -->
+<script>
+  const mountedApp = app.mount('#app')
+</script>
+
+</body> 
+  <script>
+    function sendMail() {
+        var name = $('#contact #name').val();
+        var email = $('#contact #email').val();
+        var message = $('#contact textarea').val();
+        var subject = $('#contact #subject').val();
+        window.location.href = 'mailto:wowtimesebay@yahoo.com?subject=' + subject + '&body='+name + '%0d%0a' + email + '%0d%0a%0d%0a' + message;
+    };
+</script>
+</html> 

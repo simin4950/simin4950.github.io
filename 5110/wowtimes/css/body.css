@@ -1,0 +1,148 @@
+body {
+    background: #f2f2f2;
+    color: #1B1B1E;
+    margin: 0px;   
+  }
+  
+  h2 {
+    font-family: 'Source Code Pro';
+    font-size: xx-large; 
+    text-align: center;
+    color:#5F92BF;
+  }
+  
+  h3 {
+    font-family: 'Quicksand';
+    color: #373F51;
+  }
+  
+  h4 {
+    font-family: 'Source Code Pro';
+    font-weight: lighter;
+    font-size: small;
+  }
+  
+  strong {
+    color: #5F92BF;
+  }
+  
+  h1 {
+    font-family: 'Quicksand';
+    text-align: center;
+    color: #1B1B1E;
+  }
+  
+  p {
+    font-family: 'Quicksand';
+    color:#373F51;
+  }
+  
+  ul {
+    font-family: 'Quicksand';
+    list-style: none;
+  }
+  
+  
+  .heading { 
+    margin-top: 200px; 
+    text-align: center;
+    width:800px; 
+    margin:0 auto;
+    min-height: 100vh;
+    padding-top: 200px;
+  } 
+  
+  .heading h1 { 
+    color: #373F51; 
+    font-size: 70px; 
+  } 
+  
+  .heading h3 { 
+    color: black; 
+    font-size: 20px; 
+  } 
+
+  #products {
+    padding: 50px;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #products .item {
+    flex: 400px;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    top: 0;
+    transition: top ease 0.5s;
+    background-color: rgba(95, 146, 191, 0.3);
+  }
+
+  #products a {
+    color: #1B1B1E;
+    font-size: xx-large; 
+    float:right; 
+    padding-left: 10px;
+  }
+  
+  #products .item:hover {
+    top: -10px;
+  }
+  
+  #about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    min-height: 100vh;
+  }
+  
+  #border {
+    border: 8px solid #5F92BF;
+  }
+  
+  #about .item {
+    flex: 400px;
+  }
+ 
+  
+  #contact {
+    padding-top: 100px;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+    .contact {
+      padding-top: 80px;
+      min-height: 80vh;
+      text-align: center;
+    }
+  
+    a {
+        text-decoration: none;
+    }
+  
+    a:hover {
+      color: #5F92BF; 
+    }
+  
+    .button {
+        background-color: #F5F5F5;
+        color: #1B1B1E;
+        border: 2px solid #1B1B1E;
+        padding: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
+        font-family: 'Quicksand';
+        font-size: 20px;
+    }
+  
+    .button:hover {
+        background-color: rgba(95, 146, 191, 0.3);
+        border: 2px solid #5F92BF;
+        color: #5F92BF;
+    }
