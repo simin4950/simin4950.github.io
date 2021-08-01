@@ -1,0 +1,30 @@
+h2 {
+    font-size: x-large;
+}
+
+.about img {
+    width: 75%;
+    float: center;
+}
+
+.about .item {
+    position: center;
+}
+
+.tabcontent {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.tablinks {
+    padding: 14px 0px 14px 0px;
+}
+
+.short {
+    display: inline-block;
+}
+
+.full {
+    display: none;
+}
