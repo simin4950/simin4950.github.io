@@ -1,185 +1,160 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
 body {
-    background: #0A192F;
-    color: #f1f1f1af;
-    margin: 0px;   
-    margin-left: 50px; /* Same as the width of the sidebar */
-    padding: 0px 10px; 
-  }
-  
-  h2 {
-    font-family: 'Source Code Pro';
-    font-size: xx-large; 
-    text-align: center;
-    color: #f1f1f1af;
-  }
-  
-  h3 {
-    font-family: 'Quicksand';
-    color: #f1f1f1af;
-  }
-  
-  h4 {
-    font-family: 'Source Code Pro';
-    font-weight: lighter;
-    font-size: small;
-    color: #f1f1f1af;
-  }
-  
-  strong {
-    color: #de57a5;
-  }
-  
-  h2:hover {
-    color: #de57a5;
-  }
-  
-  h1 {
-    font-family: 'Quicksand';
-    text-align: center;
-  }
-  
-  p {
-    font-family: 'Quicksand';
-  }
-  
-  ul {
-    font-family: 'Quicksand';
-    list-style: none;
-    color: #f1f1f1af;
-  }
+  background: #0A192F;
+  color: #f1f1f1af;
+}
 
-  #border {
-      border: 10px solid #de57a5;
-  }
+h2 {
+  font-family: 'Source Code Pro';
+  font-size: xx-large;
+  text-align: center;
+  color: #f1f1f1af;
+}
 
-  #home {
-    padding-top: 100px;
-    min-height: 100vh;
-  }
-  
-  .container ul li::before {
-    content: "\2022";
-    color: #de57a5;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-  }
-  
-  .list h2 {
-    font-size: 20px;
-  }
+h3 {
+  font-family: 'Quicksand';
+  color: #f1f1f1af;
+}
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .item {
-    flex: 400px;
-    padding: 50px;
-    /* position: relative; */
-  }
+h4 {
+  font-family: 'Source Code Pro';
+  font-weight: lighter;
+  font-size: small;
+  color: #f1f1f1af;
+}
 
-  .item:first-child {
-    flex: 200px;
-  }
+strong {
+  color: #de57a5;
+}
 
-  #courses {
-    padding-top: 100px;
-    min-height: 100vh;
-  }
-  
-  #courses .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  #courses .item {
-    flex: 300px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    position: relative;
-    top: 0;
-    transition: top ease 0.5s;
-    background-color: rgba(222, 87, 165, 0.2);
-  }
+h2:hover {
+  color: #de57a5;
+}
 
-  #courses .item:hover {
-    top: -10px;
-  }
+h1 {
+  font-family: 'Quicksand';
+  text-align: center;
+}
+
+p {
+  font-family: 'Quicksand';
+}
+
+ul {
+  font-family: 'Quicksand';
+  list-style: none;
+  color: #f1f1f1af;
+}
+
+#border {
+  border: 10px solid #de57a5;
+}
+
+#home {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.container ul li::before {
+  content: "\2022";
+  color: #de57a5;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.list h2 {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 400px;
+  padding: 50px;
+}
+
+.item:first-child {
+  flex: 200px;
+}
+
+#courses {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+#courses .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#courses .item {
+  flex: 300px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  background-color: rgba(222, 87, 165, 0.2);
+}
+
+#courses .item:hover {
+  top: -10px;
+}
 
 
-  #portfolio {
-    padding-top: 100px;
-    min-height: 100vh;
-  }
+#portfolio {
+  padding-top: 100px;
+  min-height: 100vh;
+}
 
-  
-  #return {
-    padding-top: 100px;
-    min-height: 100vh;
-    text-align: center;
-  }
-  
 
-  
-    .contact {
-      padding-top: 100px;
-      min-height: 100vh;
-      text-align: center;
-    }
-  
-    a {
-        color: #818181;
-        text-decoration: none;
-    }
-  
-    a:hover {
-      color: #f1f1f1; 
-    }
-  
-  /*   .sidebar {
-        height: 100%;
-        width: 50px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: black;
-        overflow-x: hidden;
-        padding-top: 20px;
-    }
-  
-    .sidebar a {
-      padding: 6px 8px 6px 16px;
-      text-decoration: none;
-      font-size: 20px;
-      color: #818181;
-      display: block;
-    }
-  
-    .sidebar a:hover {
-      color: #f1f1f1;
-    } */
-  
-    .button {
-        background-color: #0A192F;
-        color: #de57a5;
-        border: 2px solid #de57a5;
-        padding: 10px 10px 10px 10px;
-        margin: 10px 10px 10px 10px;
-        font-family: 'Quicksand';
-        font-size: 20px;
-    }
-  
-    .button:hover {
-        background-color: rgba(222, 87, 165, 0.2);
-        color: #de57a5;
-    }
-    
-   /*  @media screen and (max-height: 450px) {
-      .sidebar {padding-top: 15px;}
-      .sidebar a {font-size: 18px;}
-    } */
+#return {
+  padding-top: 100px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+
+
+.contact {
+  padding-top: 100px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+a {
+  color: #818181;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f1f1f1;
+}
+
+.button {
+  background-color: #0A192F;
+  color: #de57a5;
+  border: 2px solid #de57a5;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  font-family: 'Quicksand';
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: rgba(222, 87, 165, 0.2);
+  color: #de57a5;
+}
